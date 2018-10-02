@@ -119,6 +119,8 @@
  * <h2 id="config-link"><a href="#config-link">#</a> Link level configurations</h2>
  * @param {string} [link.color='#d3d3d3'] - 🚅🚅🚅 the color for links
  * (from version 1.3.0 this property can be configured at link level).
+ * @param {string} [link.mouseCursor='pointer'] - {@link https://developer.mozilla.org/en/docs/Web/CSS/cursor?v=control|cursor}
+ * property for when some link is mouse hovered.
  * @param {number} [link.opacity=1] - the default opacity value for links.
  * @param {boolean} [link.semanticStrokeWidth=false] - when set to true all links will have
  * *"semantic width"*, this means that the width of the connections will be proportional to the value of each link.
@@ -149,7 +151,8 @@
  *         highlightStrokeColor: 'blue'
  *     },
  *     link: {
- *         highlightColor: 'lightblue'
+ *         highlightColor: 'lightblue',
+ *         mouseCursor: 'pointer' --> new configurable property!
  *     }
  * };
  *
@@ -197,6 +200,7 @@ export default {
     link: {
         color: '#d3d3d3',
         highlightColor: '#d3d3d3',
+        mouseCursor: 'pointer',
         opacity: 1,
         semanticStrokeWidth: false,
         strokeWidth: 1.5,
